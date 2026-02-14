@@ -1,5 +1,7 @@
-fast-alpr[onnx]>=0.2.0
-streamlit
-opencv-python-headless
-inference_sdk
-shapely
+fast-alpr[onnx]==0.3.0
+streamlit==1.54.0
+opencv-python-headless==4.9.0.80
+numpy
+pillow
+shapely==2.0.3
+inference-sdk
