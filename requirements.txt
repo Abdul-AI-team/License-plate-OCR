@@ -5,3 +5,4 @@ numpy
 pillow
 shapely==2.0.3
 inference-sdk
+dotenv
