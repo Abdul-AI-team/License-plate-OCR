@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 from typing import get_args
 import cv2
 import numpy as np
@@ -11,11 +12,10 @@ from fast_alpr.default_detector import PlateDetectorModel
 from fast_alpr.default_ocr import OcrModel
 from inference_sdk import InferenceHTTPClient
 
-
+load_dotenv()  # Load environment variables from .env file
 # ---------------------------
 # Configuration
 # ---------------------------
-
 ROBOFLOW_API_KEY = os.getenv("ROBOFLOW_API_KEY")  # ⚠ Move to env variable in production
 
 CLIENT = InferenceHTTPClient(
