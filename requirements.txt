@@ -1,3 +1,5 @@
 fast-alpr[onnx]>=0.2.0
 streamlit
 opencv-python-headless
+inference_sdk
+
