@@ -15,7 +15,7 @@ from inference_sdk import InferenceHTTPClient
 # Configuration
 # ---------------------------
 
-ROBOFLOW_API_KEY = "uxlLWRCsLxnHrIEjUuS4"  # ⚠ Move to env variable in production
+ROBOFLOW_API_KEY = st.secrets["ROBOFLOW_API_KEY"]  # ⚠ Move to env variable in production
 
 CLIENT = InferenceHTTPClient(
     api_url="https://serverless.roboflow.com",
@@ -212,3 +212,4 @@ if uploaded_file is not None:
 
 else:
     st.write("Please upload an image to continue.")
+
